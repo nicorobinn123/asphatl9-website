@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asphalt 9 Legends</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-section {
+            background-image:url("./Assets/car1.png");
+            margin-top: 30px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #b91c1c; /* Dark Red */
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white py-4 px-6 md:px-12 flex justify-between items-center shadow-md">
+        <div class="flex items-center space-x-2">
+            <img src="https://placehold.co/40x40/b91c1c/ffffff?text=9" alt="Logo" class="rounded-full">
+            <span class="text-xl font-bold text-gray-900">ASPHALT 9</span>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="#" class="hover:text-red-700 transition-colors text-gray-700 underline">Home</a>
+            <a href="gallery.html" class="hover:text-red-700 transition-colors text-gray-700">Gallery</a>
+            <a href="news.html" class="hover:text-red-700 transition-colors text-gray-700">News</a>
+            <a href="esports.html" class="hover:text-red-700 transition-colors text-gray-700">Esports</a>
+        </nav>
+        <a href="subscription.html" class="bg-red-600 hover:bg-red-700 transition-colors text-white py-2 px-4 rounded-full font-bold hidden md:block">
+            Subscribe Now
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center justify-center text-center">
+        <div class="bg-black bg-opacity-50 p-8 rounded-xl max-w-2xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">ARE YOU READY TO BECOME THE NEXT ASPHALT LEGEND?</h1>
+            <p class="text-lg text-white">TAKE ON THE MOST <span class="text-red-500 font-bold">FEARLESS</span> DRIVERS</p>
+            <p class="mt-4 text-sm max-w-prose mx-auto text-white">
+                Asphalt 9: Legends, an exhilarating racing game, delivers an extraordinary racing experience with stunning graphics and an exhilarating story. Developed by Gameloft and IfiStudio, this game propels players into an adrenaline-fueled world with a collection of luxurious cars and spectacular racing tracks. Serving as a sequel to the renowned Asphalt series, Asphalt 9 takes arcade-style racing to the next level with innovative features such as Shockwave, Barrel Roll, and Nitto Pulse.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Prestigious Cars Section -->
+    <section class="py-16 bg-gray-100 text-center">
+        <h2 class="section-title text-gray-900 mb-12">OUR PRESTIGIOUS CARS</h2>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-12 px-4">
+            <!-- Car Card 1 -->
+            <div class="bg-white rounded-xl p-4 w-64 text-center transform transition-transform duration-300 hover:scale-105 shadow-lg">
+                <img src="Assets/car2.png" alt="Aston Martin" class="rounded-lg mb-2 mx-auto">
+                <p class="font-semibold text-sm text-gray-900">ASTON MARTIN</p>
+                <p class="text-xs text-gray-600">DB9</p>
+            </div>
+            <!-- Car Card 2 -->
+            <div class="bg-white rounded-xl p-4 w-64 text-center transform transition-transform duration-300 hover:scale-105 shadow-lg">
+                <img src="Assets/car3.png" alt="Trion Nemesis" class="rounded-lg mb-2 mx-auto">
+                <p class="font-semibold text-sm text-gray-900">TRION NEMESIS</p>
+            </div>
+            <!-- Car Card 3 -->
+            <div class="bg-white rounded-xl p-4 w-64 text-center transform transition-transform duration-300 hover:scale-105 shadow-lg">
+                <img src="Assets/car4.png" alt="Porsche 918 Spyder" class="rounded-lg mb-2 mx-auto">
+                <p class="font-semibold text-sm text-gray-900">PORSCHE 918 SPYDER</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Events Section -->
+    <section class="py-16 bg-gray-100 text-center relative">
+        <h2 class="section-title text-gray-900 mb-12">OUR EVENTS</h2>
+        <div class="relative w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl">
+            <img src="Assets/bg1.png" alt="Event background" class="w-full h-auto">
+            <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center p-8 text-center">
+                <div class="max-w-xl mx-auto">
+                    <h3 class="text-3xl font-bold mb-4 text-white">EPIC & ADRENALINE-FILLED</h3>
+                    <p class="italic text-lg mb-4 text-white">"Feel the rush, chase the glory!"</p>
+                    <p class="text-sm mb-6 text-white">
+                        Asphalt 9: Legends brings you the ultimate racing events where speed meets legends. Conquer tracks, dominate rivals, and unlock exclusive rewards. Are you ready to leave your mark on the streets?!
+                    </p>
+                    <a href="esports.html">
+                        <button class="bg-red-600 hover:bg-red-700 transition-colors text-white py-2 px-6 rounded-full font-bold">
+                        View Events
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 text-sm text-gray-600 text-center md:text-left shadow-inner">
+        <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <div class="flex items-center space-x-4">
+                <img src="https://placehold.co/50x50/b91c1c/ffffff?text=9" alt="Logo" class="rounded-full">
+                <span class="text-xl font-bold text-gray-900">ASPHALT 9</span>
+            </div>
+            <div class="flex flex-wrap justify-center md:justify-start space-x-6 md:space-x-12">
+                <a href="#" class="hover:text-red-700 transition-colors">Download Now</a>
+                <a href="#" class="hover:text-red-700 transition-colors">Community</a>
+                <a href="#" class="hover:text-red-700 transition-colors">Careers</a>
+                <a href="#" class="hover:text-red-700 transition-colors">Contact Us</a>
+            </div>
+            <div class="flex space-x-4">
+                <!-- Social media icons would go here -->
+                <img src="https://placehold.co/30x30/4a5568/ffffff?text=F" alt="Facebook" class="rounded">
+                <img src="https://placehold.co/30x30/4a5568/ffffff?text=T" alt="Twitter" class="rounded">
+                <img src="https://placehold.co/30x30/4a5568/ffffff?text=I" alt="Instagram" class="rounded">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
